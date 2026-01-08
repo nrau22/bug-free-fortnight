@@ -1,0 +1,114 @@
+/* ShoppingList.css */
+
+/* Container */
+.shopping-list-container {
+  background: #f0f9ff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 450px;
+}
+
+/* Title */
+.shopping-list-title {
+  font-size: 1.6rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Add item form */
+.shopping-list-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.shopping-list-input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #93c5fd;
+  font-size: 1rem;
+}
+
+.shopping-list-add-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.shopping-list-add-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Item list */
+.shopping-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual item */
+.shopping-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  background: #e0f2fe; /* light blue */
+  color: #1e3a8a; /* dark text */
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.1s;
+  margin-bottom: 0.6rem;
+}
+
+.shopping-list-item:hover {
+  background: #bae6fd;
+  transform: translateY(-2px);
+}
+
+/* Checked item */
+.shopping-list-item.checked span {
+  text-decoration: line-through;
+  color: #6b7280; /* gray text */
+}
+
+/* Checkbox */
+.shopping-list-checkbox {
+  width: 1.6em;
+  height: 1.6em;
+  accent-color: #2563eb; /* blue */
+}
+
+/* Delete button */
+.shopping-list-item button {
+  color: #ef4444;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.shopping-list-item button:hover {
+  color: #b91c1c;
+}
+
+/* Error message */
+.shopping-list-error {
+  color: #b91c1c;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+}

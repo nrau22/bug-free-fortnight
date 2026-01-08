@@ -1,0 +1,110 @@
+/* Tasks.css */
+
+/* Container */
+.tasks-container {
+  background: #fef3c7; /* light yellow */
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 450px;
+}
+
+/* Title */
+.tasks-title {
+  font-size: 1.6rem;
+  color: #b45309; /* dark orange */
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Add task form */
+.tasks-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tasks-input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #fcd34d; /* yellow border */
+  font-size: 1rem;
+}
+
+.tasks-add-btn {
+  background: #f59e0b; /* orange */
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.tasks-add-btn:hover {
+  background: #d97706;
+}
+
+/* Task list */
+.tasks-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual task */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  background: #fef3c7; /* light yellow */
+  color: #92400e; /* dark brown text */
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.1s;
+  margin-bottom: 0.6rem;
+}
+
+.task-item:hover {
+  background: #fde68a; /* slightly darker yellow */
+  transform: translateY(-2px);
+}
+
+/* Delete button */
+.task-item button {
+  color: #ef4444;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.task-item button:hover {
+  color: #b91c1c;
+}
+
+/* Placeholder */
+.task-list-placeholder {
+  background: #fef3c7;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  color: #92400e;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task-list-icon {
+  font-size: 2rem;
+}

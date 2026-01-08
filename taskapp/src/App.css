@@ -1,0 +1,165 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.home-screen {
+  background: #f8fafc;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  max-width: 420px;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  color: #4a5568;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.task-list-placeholder {
+  background: #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  color: #718096;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task-list-icon {
+  font-size: 2rem;
+}
+
+.shopping-list-section {
+  margin-top: 2.5rem;
+  padding: 1.5rem 1rem;
+  background: #acd5ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.shopping-list-title {
+  font-size: 1.4rem;
+  color: #2b6cb0;
+  margin-bottom: 1rem;
+}
+
+.open-notepad-btn {
+  background: #2b6cb0;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.open-notepad-btn:hover {
+  background: #2c5282;
+}
+
+.notepad-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.notepad-content {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  min-width: 320px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.notepad-textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.notepad-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-notepad-btn {
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.close-notepad-btn:hover {
+  background: #c53030;
+}
+.shopping-list-checkbox {
+  width: 2em;
+  height: 2em;
+  accent-color: #2b6cb0;
+}

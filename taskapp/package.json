@@ -1,27 +1,20 @@
 {
-  "name": "taskapp",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "taskapp-fullstack",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "express": "^4.22.1",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "path": "^0.12.7",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@types/react": "^19.2.5",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.1",
-    "eslint": "^9.39.1",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.24",
-    "globals": "^16.5.0",
-    "vite": "^7.2.4"
+    "nodemon": "^2.0.7"
   }
 }
